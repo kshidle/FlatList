@@ -13,3 +13,6 @@ const DATA: dataType[] = [
   { id: "3", title: "Third" },
   { id: "4", title: "Fourth" },
 ];
+
+//when exporting multiple items from same file, do NOT use "default"
+export {dataType, DATA}

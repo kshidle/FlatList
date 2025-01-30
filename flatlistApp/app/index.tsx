@@ -3,19 +3,9 @@ import defaultStyles from "../styles/defaultStyles";
 import { useState } from "react";
 import ListItemSeparator from "@/components/ListItemSeparator";
 import ListItem from "@/components/ListItem";
+import {dataType, DATA} from "@/data/appData";
 
 export default function Index() {
-  type dataType = {
-    id: string; //unique identifier for each element in list (ex: student ID)
-    title: string; //what is displayed (ex: Kay Shidle)
-  };
-
-  const DATA: dataType[] = [
-    { id: "1", title: "First" },
-    { id: "2", title: "Second" },
-    { id: "3", title: "Third" },
-    { id: "4", title: "Fourth" },
-  ];
   //create simple function to call when item is selected
   //pass param of the item that was clicked on
   const handleRowPress = (item: dataType) => {

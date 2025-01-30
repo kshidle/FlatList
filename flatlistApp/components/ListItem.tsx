@@ -1,11 +1,7 @@
 import { StyleSheet, Text, View, TouchableOpacity } from "react-native";
 import React from "react";
 import colors from "../styles/colors";
-
-type dataType = {
-  id: string;
-  title: string;
-};
+import { dataType } from "@/data/appData";
 
 type propsDataType = {
   item: dataType;
